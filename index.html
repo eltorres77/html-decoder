@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1 id="decoded">aaa</h1>
+    <script>
+        var url = window.location.href;
+        var encodedStr = url.split("?text=")[1];
+        var decodedStr = atob(encodedStr);
+        document.getElementById("decoded").innerHTML = decodedStr;
+
+    </script>
+</body>
+
+</html>
